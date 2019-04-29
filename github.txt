@@ -1,0 +1,50 @@
+GETTING STARTED
+
+Step 1: 
+
+Create a folder
+
+mkdir BigData
+
+Step 2:
+
+Enter the 'Big Data' folder
+
+cd BigData/
+
+Step 3: 
+
+Clone Repo
+
+git clone ______Paste link______ 
+
+--------------------------------
+
+BEFORE UPDATING EACH TIME YOU START WORKING 
+
+Update Repo:
+
+git pull origin master 
+
+--------------------------------
+
+IF YOU EDIT SOMETHING AND WANT TO SHARE WITH EVERYONE 
+
+git status 
+
+# (this will display current git information) (The red files have
+# been changed but not "added")
+
+git add _____file you changed_____ ______You can add many files by doing
+spaces between them______
+
+# (Now the files you ran the "add" command on will be green with a 'git
+# status' command) (Now you must "commit" the changes) 
+
+git commit -m "A message that describes what you changed"
+
+# Now changes are ready to be sent to the repo
+
+git push origin master"
+
+
