@@ -8,19 +8,25 @@
 
 # Importing the dataset
 dataset = read.csv('master.csv')
+countries_col = dataset[1]
+uni = unique(countries_col)
+uni$ID <- seq.int(nrow(uni))
+
+age_col = levels(dataset$age)
+age_col
+
 
 # Splitting the dataset into the Training set and Test set
 #
 # TODO: 
 #       Need to seperate X and Y variables 
 #       Convert Categorical Data to Numerical Data (age ranges)
-#       Deal with the country data (have to scale solution below)
 #       
 
 # Encoding categorical data
-dataset$State = factor(dataset$State,
-                       levels = c('New York', 'California', 'Florida'),
-                       labels = c(1, 2, 3))
+dataset$country = factor(dataset$country,
+                       levels = uni$country,
+                       labels = uni$ID)
 
 library(caTools)
 set.seed(123)
