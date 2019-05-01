@@ -84,6 +84,7 @@ regressor = lm(formula = suicides_no ~.,
 # Predicting the Test set results
 y_pred = predict(regressor, newdata = test_set)
 
+y_pred
 #
 #
 #
